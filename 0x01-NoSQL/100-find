@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+"""
+Write a script that lists all documents with name starting by Holberton in the collection school:
+The database name will be passed as option of mongo command
+
+"""
+
+import sys
+from pymongo import MongoClient
+
+# Retrieve the database name from the command-line argument
+database_name = sys.argv[1]
